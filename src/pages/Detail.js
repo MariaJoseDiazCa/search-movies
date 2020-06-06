@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { ButtonBackToHome } from "../components/ButtonBackToHome";
 
-const API_KEY = "7e8fcaa5";
+const API_KEY = "4287ad07";
 
 export class Detail extends Component {
   static propTypes = {
@@ -24,10 +24,6 @@ export class Detail extends Component {
         this.setState({ movie });
       });
   }
-
-  _goBack = () => {
-    window.history.back();
-  };
 
   componentDidMount() {
     console.log(this.props);

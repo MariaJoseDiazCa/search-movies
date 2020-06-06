@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+
 import { Link } from "react-router-dom";
 
 export class Movie extends Component {
@@ -17,7 +18,7 @@ export class Movie extends Component {
       <Link to={`/detail/${id}`} className="card">
         <div className="card-image">
           <figure className="image">
-            <img src={poster} alt={title} />
+            <img alt={title} src={poster} />
           </figure>
         </div>
         <div className="card-content">
